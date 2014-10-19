@@ -1,7 +1,12 @@
 package demo.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class UserAccount {
 
+    @Id
     private Long id;
 
     private String username;
