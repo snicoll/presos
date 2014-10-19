@@ -5,7 +5,8 @@ This project demonstrates various things that one can achieve very easily
 with Boot. Check also a more descriptive description of the various
 steps in the [bootero project][https://github.com/snicoll/presos/tree/master/bootero]
 
-A MongoDB database on your local machine is required by default. Note that you can
-tune the configuration if your installation deviate from the defaults. Check
-[the documentation for more details][http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-features-mongodb],
-in particular the `spring.data.mongodb.host` and `spring.data.mongodb.port`.
+A MySQL database is required. By default, it connects to an instance running
+on your local machine and use a "springtn" database. The "springtn" user with the
+same for the password is required to connect. You can obviously tune the configuration
+if your installation deviate from these settings. The database is created (or
+updated) if necessary. Check [the documentation for more details][http://docs.spring.io/spring-boot/docs/current/reference/html/howto-database-initialization.html].
