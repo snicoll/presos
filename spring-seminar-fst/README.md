@@ -9,3 +9,6 @@ A MongoDB database on your local machine is required by default. Note that you c
 tune the configuration if your installation deviate from the defaults. Check
 [the documentation for more details][http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-features-mongodb],
 in particular the `spring.data.mongodb.host` and `spring.data.mongodb.port`.
+
+If you want to try it out this project with JPA, check the `fst/postgres` and `fst/mysql`
+branches.
