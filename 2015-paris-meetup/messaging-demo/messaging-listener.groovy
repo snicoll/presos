@@ -1,12 +1,10 @@
 package org.test
 
-@Grab('spring-boot-starter-hornetq')
-
-@EnableJms
+@EnableRabbit
 @Log
 class JmsSample {
 
-    @JmsListener(destination = 'smpQueue')
+    @RabbitListener(queues = 'smpQueue')
     def processMsg(String msg) {
         log.info("Received $msg")
     }
