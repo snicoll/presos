@@ -1,13 +1,14 @@
 package demo;
 
-import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
+
+import javax.cache.annotation.CacheResult;
 
 @Service
 class DemoBookRepository implements BookRepository {
 
     @Override
-    @Cacheable("books")
+    @CacheResult(cacheName = "books")
     public Book findBook(Long id) {
         sleep(1000);
         return new Book(id, "Demo book");
