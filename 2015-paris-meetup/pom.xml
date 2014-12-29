@@ -17,6 +17,7 @@
 
     <modules>
         <module>caching-demo</module>
+        <module>messaging-demo</module>
     </modules>
 
 </project>
